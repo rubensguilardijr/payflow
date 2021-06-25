@@ -55,9 +55,7 @@ class _HomePageState extends State<HomePage> {
             IconButton(
                 onPressed: () {
                   controller.setPage(0);
-                  setState(() {
-                    
-                  });
+                  setState(() {});
                 },
                 icon: Icon(
                   Icons.home,
@@ -65,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                 )),
             GestureDetector(
               onTap: () {
-                print("clicou");
+                Navigator.pushNamed(context, "/barcode_scanner");
               },
               child: Container(
                 width: 56,
@@ -82,9 +80,7 @@ class _HomePageState extends State<HomePage> {
             IconButton(
                 onPressed: () {
                   controller.setPage(1);
-                  setState(() {
-                    
-                  });
+                  setState(() {});
                 },
                 icon: Icon(
                   Icons.description_outlined,
