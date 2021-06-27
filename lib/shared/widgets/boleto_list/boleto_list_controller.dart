@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:payflow/shared/models/boleto_model.dart';
-import 'package:payflow/shared/widgets/boleto_list/boleto_list_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class BoletoListController {
