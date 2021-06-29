@@ -17,6 +17,12 @@ class AuthController {
     }
   }
 
+  void logOutUser(BuildContext context) async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    await preferences.clear();
+    setUser(context, null);
+  }
+
   Future<void> saveUser(UserModel user) async {
     final instance = await SharedPreferences.getInstance();
     await instance.setString("user", user.toJson());
